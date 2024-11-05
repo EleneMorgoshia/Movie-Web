@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <link rel="stylesheet" href="/Main Page/index-media.css">
+</head>
+<header>
+    <!--Logo + Name-->
+    <div class="first-header-div">
+        <img src="/images/logo.png" alt="">
+    </div>
+
+
+    <div  class="burger-manu">
+        <img id="burger-manu" src="/images/burger-manu.png" alt="">
+    </div>
+
+    <div id="burgerContent" class="burger-manu-div-content">
+        <img id="x-button" style="width:15px;height:15px; margin-left:70px; margin-top:10px;" src="/images/close-icon.png" alt="">
+        <p><a href="/Main Page/index.html">Home</a></p>
+        <p><a href="/movies.html">Movies</a></p>
+        <p><a href="/Articles.html">Articles</a></p>
+        <p><a href="/Profile Page/profile.html">My account</a></p>
+    </div>
+
+    <!--second header  div -->
+    <div class="second-header-div">
+        <p class="logIn-p"><a href="/Profile Page/profile.html">Log In</a></p>
+
+        <!--Search-->
+        <div class="search-div">
+            <input class="search-input" type="text" placeholder="Search...">
+            <img src="/images/Search-icon.png" alt="">
+        </div>
+
+
+        <!--links of pages-->
+        <nav>
+            <p><a href="/Main Page/index.html">Home</a></p>
+            <p><a href="/movies.html">Movies</a></p>
+            <p><a href="/Articles.html">Articles</a></p>
+            <p><a href="/Profile Page/profile.html">My account</a></p>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <!-- Firs Section -->
+    <section class="firstSection">
+        <!-- first div -->
+        <div class="getStartedDiv">
+            <div class="getStartedDivText">
+                <h1>Need a movie? We've got the perfect  match.</h1>
+                <p>Find your next favorite movie in seconds</p>
+            </div>
+            <div class="getStartedDivBtn">
+                <button id="quizStartButton">Let's get started</button>
+            </div>
+        </div>
+
+
+        <div id="quizDiv" class="quiz-div">
+            <img style="cursor:pointer" id="exitBtn" src="/images/exit.png" alt="">
+            <form class="quiz-form">
+                <!--div of first question - How are you today-->
+                <div style="display:none" class="question feeling-quesion">
+                    <p>How Are You Today?</p>
+                    <!--good-->
+                    <input id="Good" type="radio" name="feeling" value = "Good" >
+                    <label for="Good">I'm feeling good.</label> <br> 
+                    <!--great-->
+                    <input id="Great" type="radio" name="feeling" value="Great">
+                    <label for="Great">I'm feeling great</label> <br>
+                    <!--Sad-->
+                    <input id="Sad" type="radio" value="Sad" name="feeling">
+                    <label for="Sad">I'm a bit sad.</label> <br>
+                    <!--Okay-->
+                    <input id="Okay" type="radio" value="Okay" name="feeling">
+                    <label for="Okay">I'm doing okay.</label>
+                </div>
+
+                <!--divs of second section - Question about genre-->
+                <div style="display:none" class=" question genre-question">
+                    <p>Please choose a genre</p>
+                    <!--Comedy-->
+                    <input id="Comedy" type="radio" name="genre" value = "Comedy" >
+                    <label for="Comedy">Comedy</label> 
+                    <!--Drama-->
+                    <input id="Drama" type="radio" name="genre" value = "Drama">
+                    <label for="Drama">Drama</label>
+                    <!--Action-->
+                    <input id="Action" type="radio" name="genre" value="Action">
+                    <label for="Action">Action</label> <br>
+                    <!--Crime-->
+                    <input id="Crime" type="radio" name="genre" value="Crime">
+                    <label for="Crime">Crime</label>
+                    <!--Romance-->
+                    <input id="Romance" type="radio" name="genre" value="Romance">
+                    <label for="Romance">Romance</label>
+                    <!--thriller-->
+                    <input id="Thriller" type="radio" name="genre" value="Thriller">
+                    <label for="Thriller">Thriller</label>
+                </div>
+                
+                <!--div of third quesiont - old or new movies-->
+                <div style="display:none" class=" question old-vs-new-movies-question">
+                    <p>Do you prefer classic films or recent releases?</p>
+                    <!--classic films-->
+                    <input id="Classic" type="radio" name="Year" value="Classic">
+                    <label for="Classic">Classic films</label> 
+                    <!--Recent releases-->
+                    <input id="Recent" type="radio" name="year" value="Recent">
+                    <label for="Recent">Recent releases</label>
+                </div>  
+
+                <input id="nextBtn" class="button-inp" type="button" value="Next">
+
+        
+            </form>
+        </div>
+
+        <!-- second div -->
+        <div class="mostMatchedDiv">
+            <div class="mostMatchedDivTitle">
+                <h2 id="most-watch-title">Most Matched</h2>
+            </div>
+            <div class="mostMatchedDivMoviesMain">
+
+                <div class="mostMatchedDivMovies">
+                    <div class="mostMatchedDivMoviesImgDiv"><img src="https://images-r2.thebrag.com/var/uploads/2022/04/The-Northman.jpg" alt=""></div>
+                    <div class="mostMatchedDivMoviesText">
+                        <p>The Northman</p>
+                        <p>99% Match</p>   
+                    </div>
+                    <div class="mostMatchedDivMoviesPlatform"><img src="/images/netflix-logo.png" alt=""></div>
+                </div>
+
+                <div class="mostMatchedDivMovies">
+                    <div class="mostMatchedDivMoviesImgDiv"><img src="/images/most-watch-img2.png" alt=""></div>
+                    <div class="mostMatchedDivMoviesText">
+                        <p>Road House</p>
+                        <p>93% Match</p>
+                    </div>
+                    <div class="mostMatchedDivMoviesPlatform"><img src="/images/netflix-logo.png" alt=""></div>
+                </div>
+
+                <div class="mostMatchedDivMovies">
+                    <div class="mostMatchedDivMoviesImgDiv"><img src="/images/most-watch-img3.png" alt=""></div>
+                    <div class="mostMatchedDivMoviesText">
+                        <p>The Ritual 2</p>
+                        <p>88% Match</p>
+                    </div>
+                    <div class="mostMatchedDivMoviesPlatform"><img src="/images/netflix-logo.png" alt=""></div>
+                </div>
+
+                <div class="mostMatchedDivMovies">
+                    <div class="mostMatchedDivMoviesImgDiv"><img src="/images/most-watch-img4.png" alt=""></div>
+                    <div class="mostMatchedDivMoviesText">
+                        <p>Damsel</p>
+                        <p>72% Match</p>
+                    </div>
+                    <div class="mostMatchedDivMoviesPlatform"><img src="/images/netflix-logo.png" alt=""></div>
+                </div>
+
+                <div class="mostMatchedDivMovies">
+                    <div class="mostMatchedDivMoviesImgDiv"><img src="/images/most-watch-img5.png" alt=""></div>
+                    <div class="mostMatchedDivMoviesText">
+                        <p>Skin</p>
+                        <p>65% Match</p>
+                    </div>
+                    <div class="mostMatchedDivMoviesPlatform"><img src="/images/netflix-logo.png" alt=""></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section  class="M">
+        <div class="secondSectionTitle">
+            <h1>Must Watch Movies</h1>
+        </div>
+    </section>
+    <!-- Second Section -->
+    <section class="secondSection">
+        <div class="secondSectionMainDiv">
+                <div class="secondSectionContentLeft">
+                    <div class="secondSectionContentLeftBtn"><button>Watch Film</button></div>
+                
+                    <div class="secondSectionContentLeftText">
+                        <h2>The Northman</h2>
+                        <p>Adventure Thriler Historical Drama</p>
+                    </div>
+                </div>
+            <div class="secondSectionContent">
+
+                    <!-- <div class="secondSectionTitle">
+                        <h1>Must Watch Movies</h1>
+                    </div> -->
+                <div class="secondSectionContentMovies">
+                    <div class="secondSectionContentMoviesDiv">
+                        <div><img class="mostMatchedDivMoviesImg" src="https://images-r2.thebrag.com/var/uploads/2022/04/The-Northman.jpg" alt="Movie"></div>
+                        <div><img class="mostMatchedDivMoviesImg" src="/images/BACK2.png" alt="Movie"></div>
+                        <div><img class="mostMatchedDivMoviesImg" src="/images/BACK3.png" alt="Movie"></div>
+                    </div>
+                    <div class="secondSectionContentMoviesDiv">
+                        <div><img class="mostMatchedDivMoviesImg" src="/images/BACK4.png" alt="Movie"></div>
+                        <div><img class="mostMatchedDivMoviesImg" src="/images/BACK5.png" alt="Movie"></div>
+                        <div><img class="mostMatchedDivMoviesImg" src="/images/BACK6.png" alt="Movie"></div>
+                    </div>
+                    <div class="secondSectionContentMoviesDiv">
+                        <div><img class="mostMatchedDivMoviesImg" src="/images/BACK7.png" alt="Movie"></div>
+                        <div><img class="mostMatchedDivMoviesImg" src="/images/BACK8.png" alt="Movie"></div>
+                        <div><img class="mostMatchedDivMoviesImg" src="/images/back9.png" alt="Movie"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="genresSection">
+        <div class="genresSectionTitle">
+            <h1>Discover Your Favorite Genres</h1>
+        </div>
+        
+        <div class="genresSectionMovies">
+            <div class="genresSectionMoviesChild1">
+                <div class="comedy-genre"><h1 id="genre-h1"><a  style="text-decoration: none; color:#fff"   href="/movies.html">Comedy</a></h1></div>
+                <div class="action-genre"><h1 id="genre-h1"><a  style="text-decoration: none; color:#fff"  href="/movies.html">Action & adventure</a></h1></div>
+                <div class="horor-genre"><h1 id="genre-h1"><a  style="text-decoration: none; color:#fff"  href="/movies.html">Horror</a></h1></div>
+            </div>
+            <div class="genresSectionMoviesChild2">
+                <div class="drama-genre"><h1 id="genre-h1"> <a style="text-decoration: none; color:#fff" href="/movies.html">Drama</a></h1></div>
+                <div class="romantic-comedy-genre"><h1 id="genre-h1"><a style="text-decoration: none; color:#fff" href="/movies.html">Romantic comedy</a></h1></div>
+                <div class="Mystery-genre"><h1 id="genre-h1"><a style="text-decoration: none; color:#fff" href="/movies.html">Mystery</a></h1></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <!-- <section class="reviewSection">
+        <div class="reviewSectionTitle"><h1>Reviews</h1></div>
+
+        <div class="reviewSectionReviews">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section> -->
+    
+<section class="testimonials" id="testimonials">
+    <div class="testimonials-box">
+        <h2 class="heading">Reviews</h2>
+        <div class="wrapper">
+            <div class="testimonial-item">
+                <img src="/images/review-1.jpg" alt="">
+                <h2>Marilyn</h2>
+                <div class="rating">
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                </div>
+                <p>
+                    CineMatch is a game-changer for movie lovers! 
+                    The personalized recommendations are spot on, 
+                    making it easy to discover hidden gems. The sleek 
+                    design and user-friendly interface keep me coming 
+                    back for more!
+                </p>
+            </div>
+
+            <div class="testimonial-item">
+                <img src="https://github.com/MLYTC1/Portfolio.github.io/blob/main/images/b6ae1120aa568eb89d2b5a44ca0e4eb4.jpg?raw=true" alt="">
+                <h2>Julia</h2>
+                <div class="rating">
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                </div>
+                <p>
+                    I absolutely love CineMatch! The ability to match my tastes 
+                    with movies I’ve never heard of is incredible. It’s become 
+                    my go-to site for planning movie nights. Highly recommend!
+                </p>
+            </div>
+
+
+            <div class="testimonial-item">
+                <img src="https://github.com/MLYTC1/Portfolio.github.io/blob/main/images/89ff1a5fdc3734cc90c7eba167f95ab6.jpg?raw=true" alt="">
+                <h2>Rebecca</h2>
+                <div class="rating">
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                </div>
+                <p>
+                    CineMatch takes the hassle out of finding what to 
+                    watch next! The curated lists and insightful reviews 
+                    have opened my eyes to so many fantastic films. 
+                    A must-visit for anyone who loves cinema!
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Info Section -->
+    <section class="infoSection">
+
+        <div class="infoSectionTop">
+            <div><h1>Thousands of People come here to find great movies each day.Join them!</h1></div>
+        </div>
+
+        <div class="infoSectionBottom">
+            <div class="infoSectionBottomTop">
+                <div><h1>Movie Stats:</h1></div>
+                <div>
+                    <p>Watched</p>
+                    <h1>3,245,023</h1>
+                </div>
+                <div>
+                    <p>Watchlisted</p>
+                    <h1>764,231</h1>
+                </div>
+                <div>
+                    <p>Discovered Today</p>
+                    <h1>43,030</h1>
+                </div>
+            </div>
+
+            <div class="infoSectionBottomBottom">
+                <div><h1>Powered By:</h1></div>
+                <div>
+                    <img src="https://pbs.twimg.com/profile_images/1674562292586012673/avGDzo8C_400x400.jpg" alt="IMDB">
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGZhYUrmk6vDmi1-Pj7oI-HzTpQDCi9-IFTA&s" alt="NETFLIX">
+                </div>
+                <div>
+                    <img src="https://store-images.s-microsoft.com/image/apps.16730.14618985536919905.3e754390-a812-43d7-87fc-335159cd867b.433b2d6b-1694-4511-b3c6-4dcaf99d3bbe" alt="PRIME VIDEO">
+                </div>
+                <div>
+                    <img src="https://yt3.googleusercontent.com/05lhMeAH6tZrPIUsp2yHNz3DwzhKbDUQcxcY0_qeXVyZttR_pktBzw0FcLUSR6D4fVqsEgL3ZO0=s900-c-k-c0x00ffffff-no-rj" alt="APPLE">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Frequently Asked Questions Section -->
+     <!-- <section class="FrequentlyAsked">
+        <div class="FrequentlyAskedTitle"><h1>Frequently Asked Questions</h1></div>
+
+<div class="FrequentlyAskedQuestions">
+    <div class="faq-item">
+        <h1>What is CineMatch?</h1>
+        <box-icon class="plusIcon" name="plus-medical"></box-icon>
+        <p class="faq-answer">CineMatch is a movie recommendation platform that helps you find movies based on your
+            preferences.</p>
+    </div>
+    <div class="faq-item">
+        <h1>How can I give feedback on movie recommendations?</h1>
+        <box-icon class="plusIcon" name="plus-medical"></box-icon>
+        <p class="faq-answer">You can give feedback through the "Feedback" section available on each recommendation
+            page.</p>
+    </div>
+    <div class="faq-item">
+        <h1>Can I create custom movie lists?</h1>
+        <box-icon class="plusIcon" name="plus-medical"></box-icon>
+        <p class="faq-answer">Yes, you can create custom movie lists by going to the "My Lists" section.</p>
+    </div>
+    <div class="faq-item">
+        <h1>Where can I find upcoming releases?</h1>
+        <box-icon class="plusIcon" name="plus-medical"></box-icon>
+        <p class="faq-answer">Upcoming releases are listed in the "Releases" tab, updated weekly.</p>
+    </div>
+    <div class="faq-item">
+        <h1>Can I follow friends for recommendations?</h1>
+        <box-icon class="plusIcon" name="plus-medical"></box-icon>
+        <p class="faq-answer">Yes, you can follow friends and see their movie recommendations in the "Friends" section.
+        </p>
+    </div>
+    <div class="faq-item">
+        <h1>Are there premium features available?</h1>
+        <box-icon class="plusIcon" name="plus-medical"></box-icon>
+        <p class="faq-answer">Yes, CineMatch offers premium features such as ad-free browsing, personalized
+            recommendations, and more.</p>
+    </div>
+</div>
+
+     </section> -->
+
+
+    <!--footer-->
+    <footer>
+        <!--logo and the website name-->
+        <div class="footer-logo-div">
+            <img src="/images/logo.png" alt="">
+        </div>
+
+        <!--div that involves quick links, about paragraph , contact us-->
+        <div class="second-footer-div">
+            <!--quick links-->
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <div class="child-quick-links">
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#">Movies</a></p>
+                    <p><a href="#">Articles</a></p>
+                    <p><a href="#">My account</a></p>
+                </div>
+            </div>
+
+            <!--about p-->
+            <div class="about-web">
+                <p>
+                    CineMatch offers personalized movie recommendations 
+                    tailored to your unique interests, helping you discover 
+                    the perfect film for any mood. Join us and elevate your 
+                    movie-watching experience!
+                </p>
+            </div>
+
+            <!--contact us -->
+            <div class="contact"> 
+                <h2>Contact Us</h2>
+                <form class="footer-form">
+                    <input type="email" placeholder="Enter Your Email"> <br>
+                    <input id="message-input" type="text" placeholder="Your Message"> <br>
+                    <input id="button-input" type="button" value="Send">
+                </form>
+            </div>
+        </div>
+
+
+        <!--icons-->
+        <div class="footer-icons">
+            <!--facebook icon-->
+            <div class="icon facebook">
+                <img src="/images/facebook-ico.png" alt="">
+            </div>
+            
+            <!--insta icon-->
+            <div class="icon instagram">
+                <img src="/images/instagram-icon.png" alt="">
+            </div>
+
+            <!--twitter icon-->
+            <div>
+                <img src="/images/twitter-icon.png" alt="">
+            </div>
+
+            <!--youtube icon-->
+            <div>
+                <img src="/images/youtube-icon.png" alt="">
+            </div>
+        </div>
+
+        <div class="ending">
+            <p>© 2024 CineMatch, Inc. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+     
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+<script type="module" src="/Main Page/script.js"></script>
+</body>
+</html>

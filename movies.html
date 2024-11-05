@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/movies.css">
+
+</head>
+<body>
+
+     <!--header part-->
+     <header>
+        <!--Logo + Name-->
+        <div class="first-header-div">
+            <img src="/images/logo.png" alt="">
+        </div>
+
+        <!--second header  div -->
+        <div class="second-header-div">
+            <p class="logIn-p"><a href="/Profile Page/profile.html">Log In</a></p>
+
+            <!--Search-->
+            <div class="search-div">
+                <input class="search-input" type="text" placeholder="Search...">
+                <img id="searchButton" src="/images/Search-icon.png" alt="">
+            </div>
+
+
+            <!--links of pages-->
+            <nav>
+                <p><a href="/Main Page/index.html">Home</a></p>
+                <p><a href="/movies.html">Movies</a></p>
+                <p><a href="/Articles.html">Articles</a></p>
+                <p><a href="/Profile Page/profile.html">My account</a></p>
+            </nav>
+        </div>
+    </header>
+
+    <!--main part -->
+    <main>
+        <section class="first-main-section">
+            <div class="categories">
+                <!--genres-->
+                <select  id="Genre" name="Genre">
+                    <option value="genres">Genres</option>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Crime">Crime</option>
+                    <option value="History">History</option>
+                    <option value="Fantacy">Fantacy</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Thriller">Thriller</option>
+                </select>
+
+                <!--years-->
+                <select name="Year" id="Year">
+                    <option value="Year">Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2022">2021</option>
+                    <option value="2022">2020</option>
+                    <option value="2022">2019</option>
+                    <option value="2022">2018</option>
+                    <option value="2022">2017</option>
+                    <option value="2022">2016</option>
+                    <option value="2022">2015</option>
+                    <option value="2022">2014</option>
+                    <option value="2022">2013</option>
+                    <option value="2022">2012</option>
+                    <option value="2022">2011</option>
+                    <option value="2022">2010</option>
+                    <option value="2022">2009</option>
+                    <option value="2022">2008</option>
+                    <option value="2022">2007</option>
+                    <option value="2022">2006</option>
+                    <option value="2022">2005</option>
+                    <option value="2022">2004</option>
+                    <option value="2022">2003</option>
+                    <option value="2022">2002</option>
+                    <option value="2022">2001</option>
+                    <option value="2022">2000</option>
+                </select>
+
+                <!--imdb-->
+                <select name="IMDB" id="IMDB">
+                    <option value="IMDB">IMDB</option>
+                    <option value="1.0">1</option>
+                    <option value="2.0">2</option>
+                    <option value="3.0">3</option>
+                    <option value="4.0">4</option>
+                    <option value="1.0">5</option>
+                </select>
+
+                <!--country-->
+                <select name="Country" id="Country">
+                    <option value="Country">Country</option>
+                    <option value="United States">United States</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Jepan">Jepan</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Spain">Spain</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Switzerland">Switzerland</option>
+                </select>
+
+                <div class="search-movie-div">
+                    <p id="searchButton">Filter</p>
+                </div>
+            </div>
+        </section>
+        
+        <!--movies-->
+
+    <section class="second-main-section">
+        <div class="mother-movies" id="mother-movies">
+            <!-- Movie divs will be dynamically created here -->
+        </div>
+    </section>
+
+    </main>
+    
+    <!--footer-->
+    <footer>
+        <!--logo and the website name-->
+        <div class="footer-logo-div">
+            <img src="/images/logo.png" alt="">
+        </div>
+
+        <!--div that involves quick links, about paragraph , contact us-->
+        <div class="second-footer-div">
+            <!--quick links-->
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <div class="child-quick-links">
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#">Movies</a></p>
+                    <p><a href="#">Articles</a></p>
+                    <p><a href="#">My account</a></p>
+                </div>
+            </div>
+
+            <!--about p-->
+            <div class="about-web">
+                <p>
+                    CineMatch offers personalized movie recommendations 
+                    tailored to your unique interests, helping you discover 
+                    the perfect film for any mood. Join us and elevate your 
+                    movie-watching experience!
+                </p>
+            </div>
+
+            <!--contact us -->
+            <div class="contact"> 
+                <h2>Contact Us</h2>
+                <form class="footer-form">
+                    <input type="email" placeholder="Enter Your Email"> <br>
+                    <input id="message-input" type="text" placeholder="Your Message">
+                    <input id="button-input" type="button" value="Send">
+                </form>
+            </div>
+        </div>
+
+
+        <!--icons-->
+        <div class="footer-icons">
+            <!--facebook icon-->
+            <div class="icon facebook">
+                <img src="/images/facebook-ico.png" alt="">
+            </div>
+            
+            <!--insta icon-->
+            <div class="icon instagram">
+                <img src="/images/instagram-icon.png" alt="">
+            </div>
+
+            <!--twitter icon-->
+            <div>
+                <img src="/images/twitter-icon.png" alt="">
+            </div>
+
+            <!--youtube icon-->
+            <div>
+                <img src="/images/youtube-icon.png" alt="">
+            </div>
+        </div>
+
+        <div class="ending">
+            <p>© 2024 CineMatch, Inc. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <div class="movie-info" id="movieInfo">
+        <h2 id="infoTitle"></h2>
+        <div class="movieInfoDetails">
+            <img id="infoImage" src="" alt="" style="width:100px;">
+            <div class="infoDetailsDivM">
+                <p id="infoDetails1"></p>
+                <p id="infoDetails2"></p>
+                <p id="infoDetails3"></p>
+            </div>
+            <!-- <p id="infoDetails4"></p> -->
+        </div>
+        <div class="movieDetailDiv">
+            <button id="closeInfo">Close</button>
+            <button id="watchListButton">Add to WatchList</button>
+        </div>
+    </div>
+
+
+    <script src="script.js" defer></script>     
+</body>
+</html>
